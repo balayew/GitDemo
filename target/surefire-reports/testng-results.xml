@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="0" total="12" passed="7">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyz&quot; (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot; abcdefghijklmnopqrstuvwxyz&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (FAILED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyyy&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxy &quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (FAILED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuv&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 404, content type is &quot;application&#x2F;json&quot; and response body &quot;message&quot; should contain &quot;Not Enough Characters In String&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyz&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;.abcdefghijklmnopqrstuvwxyz&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (FAILED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyzABC&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;%bcdefghijklmnopqrstuvwxyZ&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (FAILED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyyyyy&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;$$cdefghijklmnopqrstuvwxyz&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I make POST request with string &quot;acdefghijklmnopqrstuvwx%%&quot; (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (FAILED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="pangram-api-test" duration-ms="9156" started-at="2018-12-03T03:56:05Z" finished-at="2018-12-03T03:56:14Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Automated tests" duration-ms="9156" started-at="2018-12-03T03:56:05Z" finished-at="2018-12-03T03:56:14Z">
+      <class name="com.pangram.runners.CukesRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="setUpClass" is-config="true" duration-ms="191" started-at="2018-12-02T19:56:05Z" finished-at="2018-12-02T19:56:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="2941" started-at="2018-12-02T19:56:05Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post a valid pangram string with 26 or more ASCII characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyz&quot; (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="512" started-at="2018-12-02T19:56:08Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post a valid pangram string with 26 or more ASCII characters that starts with empty space"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at org.testng.Assert.assertEquals(Assert.java:463)at com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:38)at ✽.I verify status code returned is 200, content type is "application/json" and response body "pangram" should contain "true"(src/test/resources/features/PangramTest.feature:9)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot; abcdefghijklmnopqrstuvwxyz&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (FAILED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="516" started-at="2018-12-02T19:56:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post an invalid pangram string with 26 or more ASCII characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyyy&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="511" started-at="2018-12-02T19:56:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post an invalid pangram string with 26 or more ASCII characters with space instead of missing character"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at org.testng.Assert.assertEquals(Assert.java:463)at com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:38)at ✽.I verify status code returned is 200, content type is "application/json" and response body "pangram" should contain "false"(src/test/resources/features/PangramTest.feature:17)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxy &quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (FAILED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="502" started-at="2018-12-02T19:56:10Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post an invalid pangram string with less than 26 ASCII characters long"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuv&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 404, content type is &quot;application&#x2F;json&quot; and response body &quot;message&quot; should contain &quot;Not Enough Characters In String&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="526" started-at="2018-12-02T19:56:10Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post a valid pangram string with 26 or more ASCII characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyz&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="546" started-at="2018-12-02T19:56:11Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post a valid pangram string with 26 or more ASCII characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at org.testng.Assert.assertEquals(Assert.java:463)at com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:38)at ✽.I verify status code returned is 200, content type is "application/json" and response body "pangram" should contain "true"(src/test/resources/features/PangramTestSet.feature:5)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;.abcdefghijklmnopqrstuvwxyz&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (FAILED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="600" started-at="2018-12-02T19:56:11Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post a valid pangram string with 26 or more ASCII characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyzABC&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;true&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="497" started-at="2018-12-02T19:56:12Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post an invalid pangram string with 26 or more ASCII characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at org.testng.Assert.assertEquals(Assert.java:463)at com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:38)at ✽.I verify status code returned is 200, content type is "application/json" and response body "pangram" should contain "false"(src/test/resources/features/PangramTestSet.feature:15)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;%bcdefghijklmnopqrstuvwxyZ&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (FAILED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="638" started-at="2018-12-02T19:56:12Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post an invalid pangram string with 26 or more ASCII characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;abcdefghijklmnopqrstuvwxyyyyy&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="497" started-at="2018-12-02T19:56:13Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post an invalid pangram string with 26 or more ASCII characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;$$cdefghijklmnopqrstuvwxyz&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="runScenario" duration-ms="475" started-at="2018-12-02T19:56:14Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-02T19:56:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Post an invalid pangram string with 26 or more ASCII characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating if string is pangram"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:652)at org.testng.Assert.assertEquals(Assert.java:662)at com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:37)at ✽.I verify status code returned is 200, content type is "application/json" and response body "pangram" should contain "false"(src/test/resources/features/PangramTestSet.feature:15)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I make POST request with string &quot;acdefghijklmnopqrstuvwx%%&quot; (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify status code returned is 200, content type is &quot;application&#x2F;json&quot; and response body &quot;pangram&quot; should contain &quot;false&quot; (FAILED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.pangram.runners.CukesRunner@6ea12c19]" name="tearDownClass" is-config="true" duration-ms="113" started-at="2018-12-02T19:56:14Z" finished-at="2018-12-02T19:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.pangram.runners.CukesRunner -->
+    </test> <!-- Automated tests -->
+  </suite> <!-- pangram-api-test -->
+</testng-results>

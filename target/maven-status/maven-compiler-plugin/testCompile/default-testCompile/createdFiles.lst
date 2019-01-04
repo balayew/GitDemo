@@ -1,0 +1,6 @@
+com\pangram\step_definitions\Hooks.class
+com\pangram\step_definitions\PangramTest.class
+com\pangram\utilities\pangramGenerator.class
+com\pangram\utilities\ConfigurationReader.class
+com\pangram\utilities\StringPermutations.class
+com\pangram\runners\CukesRunner.class

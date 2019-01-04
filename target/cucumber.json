@@ -1,0 +1,725 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Post a valid pangram string with 26 or more ASCII characters",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-a-valid-pangram-string-with-26-or-more-ascii-characters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2468296383,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I make POST request with string \"abcdefghijklmnopqrstuvwxyz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdefghijklmnopqrstuvwxyz",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 450753954,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "true",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Post a valid pangram string with 26 or more ASCII characters that starts with empty space",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-a-valid-pangram-string-with-26-or-more-ascii-characters-that-starts-with-empty-space",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 488743545,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I make POST request with string \" abcdefghijklmnopqrstuvwxyz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": " abcdefghijklmnopqrstuvwxyz",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:38)\r\n\tat ✽.I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"true\"(src/test/resources/features/PangramTest.feature:9)\r\n",
+              "duration": 13657872,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "true",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Post an invalid pangram string with 26 or more ASCII characters",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-an-invalid-pangram-string-with-26-or-more-ascii-characters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 502561890,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I make POST request with string \"abcdefghijklmnopqrstuvwxyyy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdefghijklmnopqrstuvwxyyy",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9388559,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "false",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Post an invalid pangram string with 26 or more ASCII characters with space instead of missing character",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-an-invalid-pangram-string-with-26-or-more-ascii-characters-with-space-instead-of-missing-character",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 494588882,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I make POST request with string \"abcdefghijklmnopqrstuvwxy \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdefghijklmnopqrstuvwxy ",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [false] but found [true]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:38)\r\n\tat ✽.I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"false\"(src/test/resources/features/PangramTest.feature:17)\r\n",
+              "duration": 13417352,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "false",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Post an invalid pangram string with less than 26 ASCII characters long",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-an-invalid-pangram-string-with-less-than-26-ascii-characters-long",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 490281812,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I make POST request with string \"abcdefghijklmnopqrstuv\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdefghijklmnopqrstuv",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8340017,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I verify status code returned is 404, content type is \"application/json\" and response body \"message\" should contain \"Not Enough Characters In String\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "message",
+                  "offset": 92
+                },
+                {
+                  "val": "Not Enough Characters In String",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating if string is pangram",
+    "description": "",
+    "id": "validating-if-string-is-pangram",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/PangramTest.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Post a valid pangram string with 26 or more ASCII characters",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-a-valid-pangram-string-with-26-or-more-ascii-characters;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 505102256,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I make POST request with string \"abcdefghijklmnopqrstuvwxyz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdefghijklmnopqrstuvwxyz",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9565645,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "true",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Post a valid pangram string with 26 or more ASCII characters",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-a-valid-pangram-string-with-26-or-more-ascii-characters;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 534208869,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I make POST request with string \".abcdefghijklmnopqrstuvwxyz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": ".abcdefghijklmnopqrstuvwxyz",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:38)\r\n\tat ✽.I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"true\"(src/test/resources/features/PangramTestSet.feature:5)\r\n",
+              "duration": 8312831,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "true",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Post a valid pangram string with 26 or more ASCII characters",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-a-valid-pangram-string-with-26-or-more-ascii-characters;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 587231483,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I make POST request with string \"abcdefghijklmnopqrstuvwxyzABC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdefghijklmnopqrstuvwxyzABC",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10728218,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "true",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Post an invalid pangram string with 26 or more ASCII characters",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-an-invalid-pangram-string-with-26-or-more-ascii-characters;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 484120817,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I make POST request with string \"%bcdefghijklmnopqrstuvwxyZ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "%bcdefghijklmnopqrstuvwxyZ",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [false] but found [true]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:38)\r\n\tat ✽.I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"false\"(src/test/resources/features/PangramTestSet.feature:15)\r\n",
+              "duration": 7336028,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "false",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Post an invalid pangram string with 26 or more ASCII characters",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-an-invalid-pangram-string-with-26-or-more-ascii-characters;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 629796982,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I make POST request with string \"abcdefghijklmnopqrstuvwxyyyyy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdefghijklmnopqrstuvwxyyyyy",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6839508,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "false",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Post an invalid pangram string with 26 or more ASCII characters",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-an-invalid-pangram-string-with-26-or-more-ascii-characters;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 487648937,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I make POST request with string \"$$cdefghijklmnopqrstuvwxyz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$$cdefghijklmnopqrstuvwxyz",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7671320,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "false",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Post an invalid pangram string with 26 or more ASCII characters",
+        "description": "",
+        "id": "validating-if-string-is-pangram;post-an-invalid-pangram-string-with-26-or-more-ascii-characters;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 470102355,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I make POST request with string \"acdefghijklmnopqrstuvwx%%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "acdefghijklmnopqrstuvwx%%",
+                  "offset": 33
+                }
+              ],
+              "location": "PangramTest.i_make_POST_request_with_string(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [200] but found [404]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:652)\r\n\tat org.testng.Assert.assertEquals(Assert.java:662)\r\n\tat com.pangram.step_definitions.PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(PangramTest.java:37)\r\n\tat ✽.I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"false\"(src/test/resources/features/PangramTestSet.feature:15)\r\n",
+              "duration": 917901,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "I verify status code returned is 200, content type is \"application/json\" and response body \"pangram\" should contain \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                },
+                {
+                  "val": "application/json",
+                  "offset": 55
+                },
+                {
+                  "val": "pangram",
+                  "offset": 92
+                },
+                {
+                  "val": "false",
+                  "offset": 117
+                }
+              ],
+              "location": "PangramTest.i_verify_status_code_returned_is_content_type_is_and_response_body_should_contain(int,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating if string is pangram",
+    "description": "",
+    "id": "validating-if-string-is-pangram",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/PangramTestSet.feature",
+    "tags": []
+  }
+]

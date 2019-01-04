@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 9.903 s <<< FAILURE! - in TestSuite
+runScenario(com.pangram.runners.CukesRunner)  Time elapsed: 0.541 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+
+runScenario(com.pangram.runners.CukesRunner)  Time elapsed: 0.503 s  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+
+runScenario(com.pangram.runners.CukesRunner)  Time elapsed: 0.563 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+
+runScenario(com.pangram.runners.CukesRunner)  Time elapsed: 0.511 s  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+
+runScenario(com.pangram.runners.CukesRunner)  Time elapsed: 0.487 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [404]
+
