@@ -36,6 +36,7 @@ public class PangramTest {
 		assertEquals(response.contentType(), respType);
 		assertEquals(response.statusCode(), respCode);
 		assertEquals(json.getString(key), respBody);
+		assertEquals(json.getString(key), respBody);
 
 	}
 
