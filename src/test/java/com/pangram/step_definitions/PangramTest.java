@@ -38,8 +38,13 @@ public class PangramTest {
 		assertEquals(json.getString(key), respBody);
 		assertEquals(json.getString(key), respBody);
 		assertEquals(json.getString(key), respBody);
+
 		//india team change
 		assertEquals(response.contentType(), respType);
+
+		//usa team change
+		assertEquals(response.statusCode(), respCode);
+
 
 	}
 
